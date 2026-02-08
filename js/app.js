@@ -4,7 +4,7 @@ function renderHome() {
   app.innerHTML = `
     <section class="card">
       <h2>Bem-vinda</h2>
-      <p>Informação clara e acessível para quem convive com o lipedema.</p>
+      <p>Informação clara, confiável e baseada em evidências para quem convive com o lipedema.</p>
       <button onclick="renderMenu()">Entrar no Guia</button>
     </section>
   `;
@@ -15,7 +15,8 @@ function renderMenu() {
     <section class="card">
       <h2>Menu</h2>
       <button onclick="renderContent('lipedema')">O que é Lipedema</button>
-      <button onclick="renderContent('causas')">Causas</button>
+      <button onclick="renderContent('causas')">Causas e Fatores de Agravamento</button>
+      <button onclick="renderContent('naoFazer')">O que NÃO fazer</button>
       <button onclick="renderContent('alimentacao')">Alimentação</button>
       <button onclick="renderContent('atividade')">Atividade Física</button>
     </section>
@@ -27,37 +28,103 @@ function renderContent(section) {
     lipedema: `
       <h2>🩺 O que é Lipedema?</h2>
       <p>
-        O <strong>lipedema</strong> é uma condição crônica que afeta principalmente mulheres
-        e se caracteriza pelo acúmulo anormal de gordura, especialmente nas pernas, coxas,
-        quadris e, em alguns casos, braços.
+        O <strong>lipedema</strong> é uma condição crônica, progressiva e inflamatória que afeta
+        predominantemente mulheres. Caracteriza-se pelo acúmulo desproporcional de gordura,
+        principalmente em pernas, coxas, quadris e, em alguns casos, braços.
       </p>
       <p>
-        Diferente da gordura comum, essa condição pode causar dor, inchaço,
-        sensação de peso e facilidade para surgimento de hematomas.
+        Diferente da obesidade comum, o lipedema não responde de forma eficaz apenas à dieta
+        ou exercício e pode causar <strong>dor, inchaço, sensação de peso e facilidade para hematomas</strong>.
       </p>
     `,
+
     causas: `
-      <h2>🧬 Causas do Lipedema</h2>
+      <h2>🧬 Causas e Fatores de Agravamento do Lipedema</h2>
+
+      <p>
+        O lipedema não possui uma única causa isolada. Ele resulta da combinação de fatores
+        genéticos, hormonais e inflamatórios.
+      </p>
+
       <ul>
-        <li>Fatores genéticos</li>
-        <li>Alterações hormonais</li>
-        <li>Processos inflamatórios</li>
-        <li>Alterações na circulação</li>
+        <li>
+          <strong>Predisposição genética:</strong> histórico familiar é muito comum,
+          indicando influência hereditária.
+        </li>
+        <li>
+          <strong>Alterações hormonais:</strong> início ou piora dos sintomas costuma ocorrer
+          em fases como puberdade, gravidez, uso de anticoncepcionais ou menopausa.
+        </li>
+        <li>
+          <strong>Inflamação crônica:</strong> o tecido adiposo do lipedema apresenta um
+          estado inflamatório persistente, que contribui para dor e sensibilidade.
+        </li>
+        <li>
+          <strong>Comprometimento vascular e linfático:</strong> favorece inchaço,
+          retenção de líquidos e sensação de peso nas pernas.
+        </li>
+        <li>
+          <strong>Sedentarismo e ganho de peso:</strong> não causam o lipedema,
+          mas podem agravar significativamente os sintomas.
+        </li>
       </ul>
     `,
+
+    naoFazer: `
+      <h2>🚫 O que NÃO fazer no Lipedema</h2>
+
+      <p>
+        Alguns hábitos e abordagens comuns podem piorar os sintomas do lipedema
+        e atrasar o controle da condição.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Não insistir em dietas extremamente restritivas:</strong>
+          o lipedema não é causado por falta de disciplina alimentar e dietas
+          radicais aumentam inflamação e frustração.
+        </li>
+        <li>
+          <strong>Não praticar exercícios de alto impacto sem orientação:</strong>
+          atividades como saltos excessivos e corrida intensa podem aumentar dor
+          e inflamação.
+        </li>
+        <li>
+          <strong>Não ignorar dor e inchaço:</strong>
+          sentir dor constante não é normal e deve ser avaliado.
+        </li>
+        <li>
+          <strong>Não comparar seu corpo com padrões irreais:</strong>
+          o lipedema é uma condição médica, não uma falha estética.
+        </li>
+        <li>
+          <strong>Não adiar o acompanhamento profissional:</strong>
+          quanto antes o tratamento começa, melhor o controle da progressão.
+        </li>
+      </ul>
+    `,
+
     alimentacao: `
       <h2>🥗 Alimentação</h2>
       <p>
-        Uma alimentação anti-inflamatória pode ajudar no controle dos sintomas.
-        Evitar ultraprocessados, açúcar em excesso e priorizar alimentos naturais
-        é um passo importante.
+        Uma alimentação com foco anti-inflamatório pode auxiliar no controle
+        dos sintomas do lipedema.
+      </p>
+      <p>
+        Priorize alimentos naturais, reduza ultraprocessados, açúcar e excesso
+        de sódio. A individualização é fundamental.
       </p>
     `,
+
     atividade: `
       <h2>🏃‍♀️ Atividade Física</h2>
       <p>
-        Exercícios de baixo impacto, como caminhada, musculação orientada,
-        hidroginástica e pilates são geralmente os mais indicados.
+        Exercícios de baixo impacto são os mais recomendados para quem convive
+        com lipedema.
+      </p>
+      <p>
+        Caminhada, musculação orientada, pilates e atividades aquáticas ajudam
+        na circulação, força e controle do inchaço.
       </p>
     `
   };
