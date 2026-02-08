@@ -1,0 +1,15 @@
+/lipedema-app
+│
+├── index.html
+├── manifest.json
+├── service-worker.js
+│
+├── /css
+│   └── style.css
+│
+├── /js
+│   └── app.js
+│
+├── /icons
+│   ├── icon-192.png
+│   └── icon-512.png
