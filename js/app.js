@@ -105,28 +105,154 @@ function renderContent(section) {
     `,
 
     alimentacao: `
-      <h2>🥗 Alimentação</h2>
-      <p>
-        Uma alimentação com foco anti-inflamatório pode auxiliar no controle
-        dos sintomas do lipedema.
-      </p>
-      <p>
-        Priorize alimentos naturais, reduza ultraprocessados, açúcar e excesso
-        de sódio. A individualização é fundamental.
-      </p>
-    `,
+  <h2>🥗 Alimentação no Lipedema</h2>
 
-    atividade: `
-      <h2>🏃‍♀️ Atividade Física</h2>
-      <p>
-        Exercícios de baixo impacto são os mais recomendados para quem convive
-        com lipedema.
-      </p>
-      <p>
-        Caminhada, musculação orientada, pilates e atividades aquáticas ajudam
-        na circulação, força e controle do inchaço.
-      </p>
-    `
+  <p>
+    A alimentação não cura o lipedema, mas exerce um papel fundamental no
+    <strong>controle da inflamação, da dor, do inchaço e da progressão da condição</strong>.
+  </p>
+
+  <p>
+    O foco deve ser uma alimentação <strong>anti-inflamatória, equilibrada e sustentável</strong>,
+    respeitando a individualidade de cada pessoa.
+  </p>
+
+  <hr>
+
+  <h3>🥑 Gorduras</h3>
+
+  <p><strong>O que AJUDA:</strong></p>
+  <ul>
+    <li>Azeite de oliva extra-virgem</li>
+    <li>Abacate</li>
+    <li>Castanhas, nozes e amêndoas</li>
+    <li>Sementes de chia e linhaça</li>
+    <li>Peixes ricos em ômega-3 (salmão, sardinha, atum)</li>
+  </ul>
+
+  <p><strong>O que PIORA:</strong></p>
+  <ul>
+    <li>Gorduras trans</li>
+    <li>Frituras</li>
+    <li>Margarina</li>
+    <li>Fast food</li>
+    <li>Alimentos ultraprocessados ricos em gordura industrial</li>
+  </ul>
+
+  <hr>
+
+  <h3>🍚 Carboidratos</h3>
+
+  <p><strong>O que AJUDA:</strong></p>
+  <ul>
+    <li>Arroz integral</li>
+    <li>Batata-doce</li>
+    <li>Mandioca</li>
+    <li>Aveia</li>
+    <li>Quinoa</li>
+  </ul>
+
+  <p><strong>O que PIORA:</strong></p>
+  <ul>
+    <li>Açúcar refinado</li>
+    <li>Pães brancos</li>
+    <li>Massas refinadas</li>
+    <li>Doces industrializados</li>
+    <li>Refrigerantes e sucos artificiais</li>
+  </ul>
+
+  <hr>
+
+  <h3>🍗 Proteínas</h3>
+
+  <p><strong>O que AJUDA:</strong></p>
+  <ul>
+    <li>Frango</li>
+    <li>Peixes</li>
+    <li>Ovos</li>
+    <li>Carnes magras</li>
+    <li>Leguminosas (feijão, lentilha, grão-de-bico)</li>
+  </ul>
+
+  <p><strong>O que PIORA:</strong></p>
+  <ul>
+    <li>Carnes ultraprocessadas (salsicha, presunto, linguiça)</li>
+    <li>Excesso de carne vermelha</li>
+    <li>Embutidos ricos em sódio</li>
+  </ul>
+
+  <hr>
+
+  <h3>🥦 Vegetais e Legumes</h3>
+
+  <p><strong>O que AJUDA:</strong></p>
+  <ul>
+    <li>Vegetais verdes escuros (brócolis, couve, espinafre)</li>
+    <li>Abobrinha</li>
+    <li>Cenoura</li>
+    <li>Beterraba</li>
+    <li>Abóbora</li>
+  </ul>
+
+  <p>
+    Vegetais são ricos em fibras e compostos anti-inflamatórios,
+    essenciais para o controle do lipedema.
+  </p>
+
+  <hr>
+
+  <h3>🍓 Frutas</h3>
+
+  <p><strong>O que AJUDA:</strong></p>
+  <ul>
+    <li>Frutas vermelhas (morango, mirtilo, amora)</li>
+    <li>Maçã</li>
+    <li>Pera</li>
+    <li>Abacate</li>
+    <li>Kiwi</li>
+  </ul>
+
+  <p><strong>Consumir com moderação:</strong></p>
+  <ul>
+    <li>Banana</li>
+    <li>Manga</li>
+    <li>Uva</li>
+  </ul>
+
+  <hr>
+
+  <h3>🧂 Sal, açúcar e ultraprocessados</h3>
+
+  <p><strong>Evitar ao máximo:</strong></p>
+  <ul>
+    <li>Excesso de sal (favorece retenção de líquidos)</li>
+    <li>Açúcar refinado</li>
+    <li>Alimentos ultraprocessados</li>
+    <li>Temperos prontos e caldos industrializados</li>
+  </ul>
+
+  <hr>
+
+  <h3>💧 Hidratação</h3>
+
+  <p>
+    A ingestão adequada de água auxilia na circulação,
+    no funcionamento do sistema linfático e no controle do inchaço.
+  </p>
+
+  <p>
+    Chás naturais com ação anti-inflamatória, como gengibre,
+    cúrcuma e cavalinha, podem ser aliados.
+  </p>
+
+  <hr>
+
+  <p>
+    ⚠️ <strong>Importante:</strong> a alimentação deve ser sempre
+    individualizada e, sempre que possível, orientada por um
+    nutricionista com conhecimento em lipedema.
+  </p>
+`
   };
 
   app.innerHTML = `
@@ -139,3 +265,4 @@ function renderContent(section) {
 
 // Inicialização do app
 renderHome();
+
