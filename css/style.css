@@ -1,3 +1,9 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Corpo */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -5,6 +11,7 @@ body {
   color: #2E2E2E;
 }
 
+/* Cabeçalho */
 header {
   background: #4A90E2;
   color: #fff;
@@ -12,18 +19,22 @@ header {
   text-align: center;
 }
 
+/* Área principal */
 main {
   padding: 20px;
 }
 
+/* Card inicial */
 .card {
   background: #fff;
   border-radius: 16px;
   padding: 20px;
   margin-bottom: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
+/* Botões */
 button {
   background: #4A90E2;
   color: #fff;
@@ -32,4 +43,58 @@ button {
   border-radius: 12px;
   font-size: 16px;
   width: 100%;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.9;
+}
+
+/* Conteúdo do Guia */
+.guia-conteudo {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.guia-conteudo h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.guia-conteudo h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.guia-conteudo p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Listas */
+.guia-conteudo ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.guia-conteudo li {
+  margin-bottom: 6px;
+}
+
+/* Aviso importante */
+.aviso {
+  background: #F4F6F8;
+  border-left: 4px solid #4A90E2;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+/* Controle de telas (PWA) */
+.hidden {
+  display: none;
 }
