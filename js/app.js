@@ -25,6 +25,7 @@ function renderMenu() {
 
 function renderContent(section) {
   const content = {
+
     lipedema: `
       <h2>🩺 O que é Lipedema?</h2>
       <p>
@@ -40,219 +41,102 @@ function renderContent(section) {
 
     causas: `
       <h2>🧬 Causas e Fatores de Agravamento do Lipedema</h2>
-
       <p>
-        O lipedema não possui uma única causa isolada. Ele resulta da combinação de fatores
-        genéticos, hormonais e inflamatórios.
+        O lipedema resulta da combinação de fatores genéticos, hormonais,
+        inflamatórios e circulatórios.
       </p>
-
       <ul>
-        <li>
-          <strong>Predisposição genética:</strong> histórico familiar é muito comum,
-          indicando influência hereditária.
-        </li>
-        <li>
-          <strong>Alterações hormonais:</strong> início ou piora dos sintomas costuma ocorrer
-          em fases como puberdade, gravidez, uso de anticoncepcionais ou menopausa.
-        </li>
-        <li>
-          <strong>Inflamação crônica:</strong> o tecido adiposo do lipedema apresenta um
-          estado inflamatório persistente, que contribui para dor e sensibilidade.
-        </li>
-        <li>
-          <strong>Comprometimento vascular e linfático:</strong> favorece inchaço,
-          retenção de líquidos e sensação de peso nas pernas.
-        </li>
-        <li>
-          <strong>Sedentarismo e ganho de peso:</strong> não causam o lipedema,
-          mas podem agravar significativamente os sintomas.
-        </li>
+        <li><strong>Predisposição genética</strong></li>
+        <li><strong>Alterações hormonais</strong></li>
+        <li><strong>Inflamação crônica</strong></li>
+        <li><strong>Comprometimento vascular e linfático</strong></li>
+        <li><strong>Sedentarismo e ganho de peso</strong> (agravam, mas não causam)</li>
       </ul>
     `,
 
     naoFazer: `
       <h2>🚫 O que NÃO fazer no Lipedema</h2>
-
-      <p>
-        Alguns hábitos e abordagens comuns podem piorar os sintomas do lipedema
-        e atrasar o controle da condição.
-      </p>
-
       <ul>
-        <li>
-          <strong>Não insistir em dietas extremamente restritivas:</strong>
-          o lipedema não é causado por falta de disciplina alimentar e dietas
-          radicais aumentam inflamação e frustração.
-        </li>
-        <li>
-          <strong>Não praticar exercícios de alto impacto sem orientação:</strong>
-          atividades como saltos excessivos e corrida intensa podem aumentar dor
-          e inflamação.
-        </li>
-        <li>
-          <strong>Não ignorar dor e inchaço:</strong>
-          sentir dor constante não é normal e deve ser avaliado.
-        </li>
-        <li>
-          <strong>Não comparar seu corpo com padrões irreais:</strong>
-          o lipedema é uma condição médica, não uma falha estética.
-        </li>
-        <li>
-          <strong>Não adiar o acompanhamento profissional:</strong>
-          quanto antes o tratamento começa, melhor o controle da progressão.
-        </li>
+        <li>Dietas extremamente restritivas</li>
+        <li>Exercícios de alto impacto sem orientação</li>
+        <li>Ignorar dor e inchaço</li>
+        <li>Comparar-se com padrões irreais</li>
+        <li>Adiar acompanhamento profissional</li>
       </ul>
     `,
 
     alimentacao: `
-  <h2>🥗 Alimentação no Lipedema</h2>
+      <h2>🥗 Alimentação no Lipedema</h2>
+      <p>
+        A alimentação não cura o lipedema, mas ajuda no controle da inflamação,
+        dor e retenção de líquidos.
+      </p>
+      <p>
+        Priorize alimentos naturais e evite ultraprocessados.
+      </p>
+    `,
 
-  <p>
-    A alimentação não cura o lipedema, mas exerce um papel fundamental no
-    <strong>controle da inflamação, da dor, do inchaço e da progressão da condição</strong>.
-  </p>
+    atividade: `
+      <h2>🏃‍♀️ Atividade Física no Lipedema</h2>
 
-  <p>
-    O foco deve ser uma alimentação <strong>anti-inflamatória, equilibrada e sustentável</strong>,
-    respeitando a individualidade de cada pessoa.
-  </p>
+      <p>
+        A prática regular de exercícios ajuda a reduzir dor, inchaço
+        e melhora a circulação e a qualidade de vida.
+      </p>
 
-  <hr>
+      <h3>✅ Exercícios que AJUDAM</h3>
 
-  <h3>🥑 Gorduras</h3>
+      <h4>🚶‍♀️ Aeróbicos de baixo impacto</h4>
+      <ul>
+        <li>Caminhada</li>
+        <li>Bicicleta ergométrica</li>
+        <li>Elíptico</li>
+        <li>Hidroginástica</li>
+        <li>Natação</li>
+      </ul>
+      <p>
+        Estimulam a circulação sanguínea e linfática sem sobrecarregar
+        articulações e tecidos.
+      </p>
 
-  <p><strong>O que AJUDA:</strong></p>
-  <ul>
-    <li>Azeite de oliva extra-virgem</li>
-    <li>Abacate</li>
-    <li>Castanhas, nozes e amêndoas</li>
-    <li>Sementes de chia e linhaça</li>
-    <li>Peixes ricos em ômega-3 (salmão, sardinha, atum)</li>
-  </ul>
+      <h4>🏋️‍♀️ Musculação orientada</h4>
+      <ul>
+        <li>Agachamentos leves a moderados</li>
+        <li>Leg press</li>
+        <li>Cadeira extensora e flexora</li>
+        <li>Exercícios para glúteos</li>
+      </ul>
+      <p>
+        O fortalecimento muscular auxilia o retorno venoso e linfático,
+        funcionando como uma “bomba natural”.
+      </p>
 
-  <p><strong>O que PIORA:</strong></p>
-  <ul>
-    <li>Gorduras trans</li>
-    <li>Frituras</li>
-    <li>Margarina</li>
-    <li>Fast food</li>
-    <li>Alimentos ultraprocessados ricos em gordura industrial</li>
-  </ul>
+      <h4>💧 Exercícios na água</h4>
+      <p>
+        A pressão da água ajuda na drenagem e reduz o impacto,
+        sendo altamente recomendada.
+      </p>
 
-  <hr>
+      <h3>❌ Exercícios que podem PIORAR</h3>
+      <ul>
+        <li>Corrida intensa</li>
+        <li>Saltos frequentes</li>
+        <li>HIIT muito agressivo</li>
+        <li>Cargas excessivas sem orientação</li>
+      </ul>
 
-  <h3>🍚 Carboidratos</h3>
+      <p>
+        Impacto excessivo e treinos muito intensos podem aumentar
+        inflamação, dor e retenção de líquidos.
+      </p>
 
-  <p><strong>O que AJUDA:</strong></p>
-  <ul>
-    <li>Arroz integral</li>
-    <li>Batata-doce</li>
-    <li>Mandioca</li>
-    <li>Aveia</li>
-    <li>Quinoa</li>
-  </ul>
-
-  <p><strong>O que PIORA:</strong></p>
-  <ul>
-    <li>Açúcar refinado</li>
-    <li>Pães brancos</li>
-    <li>Massas refinadas</li>
-    <li>Doces industrializados</li>
-    <li>Refrigerantes e sucos artificiais</li>
-  </ul>
-
-  <hr>
-
-  <h3>🍗 Proteínas</h3>
-
-  <p><strong>O que AJUDA:</strong></p>
-  <ul>
-    <li>Frango</li>
-    <li>Peixes</li>
-    <li>Ovos</li>
-    <li>Carnes magras</li>
-    <li>Leguminosas (feijão, lentilha, grão-de-bico)</li>
-  </ul>
-
-  <p><strong>O que PIORA:</strong></p>
-  <ul>
-    <li>Carnes ultraprocessadas (salsicha, presunto, linguiça)</li>
-    <li>Excesso de carne vermelha</li>
-    <li>Embutidos ricos em sódio</li>
-  </ul>
-
-  <hr>
-
-  <h3>🥦 Vegetais e Legumes</h3>
-
-  <p><strong>O que AJUDA:</strong></p>
-  <ul>
-    <li>Vegetais verdes escuros (brócolis, couve, espinafre)</li>
-    <li>Abobrinha</li>
-    <li>Cenoura</li>
-    <li>Beterraba</li>
-    <li>Abóbora</li>
-  </ul>
-
-  <p>
-    Vegetais são ricos em fibras e compostos anti-inflamatórios,
-    essenciais para o controle do lipedema.
-  </p>
-
-  <hr>
-
-  <h3>🍓 Frutas</h3>
-
-  <p><strong>O que AJUDA:</strong></p>
-  <ul>
-    <li>Frutas vermelhas (morango, mirtilo, amora)</li>
-    <li>Maçã</li>
-    <li>Pera</li>
-    <li>Abacate</li>
-    <li>Kiwi</li>
-  </ul>
-
-  <p><strong>Consumir com moderação:</strong></p>
-  <ul>
-    <li>Banana</li>
-    <li>Manga</li>
-    <li>Uva</li>
-  </ul>
-
-  <hr>
-
-  <h3>🧂 Sal, açúcar e ultraprocessados</h3>
-
-  <p><strong>Evitar ao máximo:</strong></p>
-  <ul>
-    <li>Excesso de sal (favorece retenção de líquidos)</li>
-    <li>Açúcar refinado</li>
-    <li>Alimentos ultraprocessados</li>
-    <li>Temperos prontos e caldos industrializados</li>
-  </ul>
-
-  <hr>
-
-  <h3>💧 Hidratação</h3>
-
-  <p>
-    A ingestão adequada de água auxilia na circulação,
-    no funcionamento do sistema linfático e no controle do inchaço.
-  </p>
-
-  <p>
-    Chás naturais com ação anti-inflamatória, como gengibre,
-    cúrcuma e cavalinha, podem ser aliados.
-  </p>
-
-  <hr>
-
-  <p>
-    ⚠️ <strong>Importante:</strong> a alimentação deve ser sempre
-    individualizada e, sempre que possível, orientada por um
-    nutricionista com conhecimento em lipedema.
-  </p>
-`
+      <div class="aviso">
+        <p>
+          🔒 Conteúdo futuro: exemplos de treinos organizados (A-B-C)
+          específicos para lipedema.
+        </p>
+      </div>
+    `
   };
 
   app.innerHTML = `
@@ -263,6 +147,5 @@ function renderContent(section) {
   `;
 }
 
-// Inicialização do app
+// Inicialização
 renderHome();
-
