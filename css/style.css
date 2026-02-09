@@ -1,100 +1,83 @@
-/* Reset básico */
-* {
-  box-sizing: border-box;
-}
-
-/* Corpo */
+/* Estilos básicos para o App parecer um App */
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #E8F1F8;
-  color: #2E2E2E;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fce4ec; /* Um tom rosa bem claro */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #333;
 }
 
-/* Cabeçalho */
-header {
-  background: #4A90E2;
-  color: #fff;
-  padding: 16px;
-  text-align: center;
+#app {
+    width: 100%;
+    max-width: 480px; /* Largura de celular */
 }
 
-/* Área principal */
-main {
-  padding: 20px;
-}
-
-/* Card inicial */
 .card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Botões */
+h2 {
+    color: #d81b60;
+    margin-top: 0;
+}
+
+h3 {
+    color: #ad1457;
+}
+
+p, li {
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+}
+
 button {
-  background: #4A90E2;
-  color: #fff;
-  border: none;
-  padding: 12px 16px;
-  border-radius: 12px;
-  font-size: 16px;
-  width: 100%;
-  cursor: pointer;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+    text-align: center;
 }
 
-button:active {
-  opacity: 0.9;
+button:hover {
+    background-color: #ad1457;
 }
 
-/* Conteúdo do Guia */
-.guia-conteudo {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  margin-top: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.guia-conteudo h2 {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.guia-conteudo h3 {
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
-
-.guia-conteudo p {
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-/* Listas */
-.guia-conteudo ul {
-  padding-left: 20px;
-  margin-bottom: 16px;
-}
-
-.guia-conteudo li {
-  margin-bottom: 6px;
-}
-
-/* Aviso importante */
 .aviso {
-  background: #F4F6F8;
-  border-left: 4px solid #4A90E2;
-  padding: 12px;
-  margin-top: 20px;
-  font-size: 0.9rem;
-  border-radius: 8px;
+    background-color: #fff3e0;
+    border-left: 4px solid #ff9800;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-size: 0.9em;
 }
 
-/* Controle de telas (PWA) */
-.hidden {
-  display: none;
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
